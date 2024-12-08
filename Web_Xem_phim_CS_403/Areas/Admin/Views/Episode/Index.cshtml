@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Web_Xem_phim_CS_403.Models.Movie>
+
+<div class="container my-4">
+    <h2 class="text-center mb-4">Manage Series Movies</h2>
+    <table class="table table-bordered text-center">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Total Episodes</th>
+                <th>Current Episodes</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>@movie.MovieID</td>
+                    <td>@movie.Title</td>
+                    <td>@movie.TotalEpisodes</td>
+                    <td>@movie.Episodes.Count</td>
+                    <td>
+                        <a asp-action="Manage" asp-route-movieId="@movie.MovieID" class="btn btn-primary btn-sm">
+                            <i class="bi bi-gear"></i> Manage Episodes
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

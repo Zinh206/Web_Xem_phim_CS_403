@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\areas\\admin\\views\\episode\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\areas\\admin\\views\\episode\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\areas\\admin\\controllers\\episodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\areas\\admin\\controllers\\episodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\models\\viewmodel\\episodevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\models\\viewmodel\\episodevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\models\\episode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\models\\episode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\areas\\admin\\views\\episode\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\areas\\admin\\views\\episode\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EpisodeVM.cs",
+              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Models\\ViewModel\\EpisodeVM.cs",
+              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Models\\ViewModel\\EpisodeVM.cs",
+              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Models\\ViewModel\\EpisodeVM.cs",
+              "RelativeToolTip": "Web_Xem_phim_CS_403\\Models\\ViewModel\\EpisodeVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T00:43:40.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Episode\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Episode\\Index.cshtml",
+              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Episode\\Index.cshtml",
+              "RelativeToolTip": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Episode\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAYwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T00:34:41.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Episode.cs",
+              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Models\\Episode.cs",
+              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Models\\Episode.cs",
+              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Models\\Episode.cs",
+              "RelativeToolTip": "Web_Xem_phim_CS_403\\Models\\Episode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T00:27:12.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EpisodeController.cs",
+              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Controllers\\EpisodeController.cs",
+              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Areas\\Admin\\Controllers\\EpisodeController.cs",
+              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Controllers\\EpisodeController.cs",
+              "RelativeToolTip": "Web_Xem_phim_CS_403\\Areas\\Admin\\Controllers\\EpisodeController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAYwHYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T00:19:34.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Manage.cshtml",
+              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Episode\\Manage.cshtml",
+              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Episode\\Manage.cshtml",
+              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Episode\\Manage.cshtml",
+              "RelativeToolTip": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Episode\\Manage.cshtml",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAQwGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T00:17:15.538Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

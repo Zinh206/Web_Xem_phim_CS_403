@@ -1,0 +1,117 @@
+﻿@model Web_Xem_phim_CS_403.Models.ViewModel.MovieVM
+
+<div class="container my-4">
+    <h2 class="text-center mb-4">Edit Movie</h2>
+
+    <form asp-action="Edit" method="post">
+        <!-- Hidden Movie ID -->
+        <input type="hidden" asp-for="MovieID" />
+
+        <!-- Input Title -->
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <!-- Input Description -->
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <!-- Input Release Date -->
+        <div class="mb-3">
+            <label asp-for="ReleaseDate" class="form-label"></label>
+            <input asp-for="ReleaseDate" class="form-control" type="date" />
+            <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+        </div>
+
+        <!-- Input Duration -->
+        <div class="mb-3">
+            <label asp-for="Duration" class="form-label"></label>
+            <input asp-for="Duration" class="form-control" type="number" min="0" />
+            <span asp-validation-for="Duration" class="text-danger"></span>
+        </div>
+
+        <!-- Checkbox để chọn phim lẻ/phim bộ -->
+        <div class="mb-3">
+            <div class="form-check">
+                <input asp-for="IsSeries" class="form-check-input" type="checkbox" id="IsSeries" />
+                <label asp-for="IsSeries" class="form-check-label">Is Series (Multiple Episodes)</label>
+            </div>
+        </div>
+
+        <!-- Input Total Episodes nếu là phim bộ -->
+        <div class="mb-3 @(Model.IsSeries ? "" : "d-none")" id="totalEpisodesSection">
+            <label asp-for="TotalEpisodes" class="form-label"></label>
+            <input asp-for="TotalEpisodes" class="form-control" type="number" min="1" />
+            <span asp-validation-for="TotalEpisodes" class="text-danger"></span>
+        </div>
+
+        <!-- Input Categories -->
+        <div class="mb-3">
+            <label for="categories" class="form-label">Categories</label>
+            <select id="categories" name="SelectedCategories" class="form-select select2" multiple>
+                @foreach (var category in ViewBag.Categories as List<Web_Xem_phim_CS_403.Models.Category>)
+                {
+                    bool isSelected = ViewBag.SelectedCategories != null && ((List<int>)ViewBag.SelectedCategories).Contains(category.Id);
+                    <option value="@category.Id" selected="@(isSelected ? "selected" : "")">@category.Name</option>
+                }
+            </select>
+        </div>
+
+        <!-- Input Poster URL -->
+        <div class="mb-3">
+            <label asp-for="PosterURL" class="form-label"></label>
+            <input asp-for="PosterURL" class="form-control" />
+            <span asp-validation-for="PosterURL" class="text-danger"></span>
+        </div>
+
+        <!-- Input Trailer URL -->
+        <div class="mb-3">
+            <label asp-for="TrailerURL" class="form-label"></label>
+            <input asp-for="TrailerURL" class="form-control" />
+            <span asp-validation-for="TrailerURL" class="text-danger"></span>
+        </div>
+
+        <!-- Input Rating -->
+        <div class="mb-3">
+            <label asp-for="Rating" class="form-label"></label>
+            <input asp-for="Rating" class="form-control" type="number" step="0.1" min="0" max="10" />
+            <span asp-validation-for="Rating" class="text-danger"></span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary me-2">Save</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.select2').select2({
+                placeholder: "Select categories",
+                allowClear: true
+            });
+
+            $('#IsSeries').change(function () {
+                if ($(this).is(':checked')) {
+                    $('#totalEpisodesSection input').prop('disabled', false);
+                    $('#totalEpisodesSection').removeClass('d-none');
+                } else {
+                    $('#totalEpisodesSection input').prop('disabled', true);
+                    $('#totalEpisodesSection').addClass('d-none');
+                }
+            });
+
+            $('#IsSeries').trigger('change'); // Áp dụng ngay khi load trang
+        });
+    </script>
+}
+
+

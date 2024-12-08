@@ -1,0 +1,58 @@
+﻿body {
+   
+}
+
+footer {
+    border-top: none; /* Loại bỏ đường viền trên */
+    padding: 20px 0; /* Thêm padding nếu muốn footer đẹp hơn */
+    text-align: center; /* Căn giữa nội dung */
+    
+}
+
+#sidebar {
+    background-color: #f8f9fa; /* Xám nhạt */
+    color: #0d6efd; /* Xanh dương đậm */
+    width: 250px;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng hover cho nav-link */
+.nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6c757d;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+}
+
+    .nav-link:hover {
+        background-color: #bbdefb; /* Xanh dương nhạt */
+        color: #0a58ca;
+        transform: translateX(5px); /* Hiệu ứng dịch sang phải */
+        font-weight: bold; /* In đậm chữ */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng */
+    }
+
+    /* Biểu tượng trong nav-link */
+    .nav-link i {
+        display: flex;
+        font-size: 1.25rem;
+        margin-right: 12px;
+        color: #0d6efd;
+        transition: transform 0.3s ease; /* Hiệu ứng biểu tượng */
+    }
+
+    /* Biểu tượng xoay nhẹ khi hover */
+    .nav-link:hover i {
+        transform: rotate(10deg);
+    }
+.nav-item {
+    margin-bottom: 10px;
+}
