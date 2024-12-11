@@ -1,5 +1,6 @@
 ﻿@model Web_Xem_phim_CS_403.Models.ViewModel.EpisodeListVM
 
+
 <div class="container my-4">
     <h2 class="text-center mb-4">Manage Episodes for "@Model.MovieTitle"</h2>
 
@@ -49,89 +50,128 @@
     </table>
 </div>
 
-
-<!-- Modal for Add/Edit Episode -->
-<<!-- Modal for Add/Edit Episode -->
 <!-- Modal for Add/Edit Episode -->
 <div class="modal fade" id="addEditEpisodeModal" tabindex="-1" aria-labelledby="addEditEpisodeModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
+            <!-- Form for Add/Edit Episode -->
             <form asp-action="AddOrEditEpisode" method="post">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="addEditEpisodeModalLabel">Add/Edit Episode</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <input type="hidden" name="EpisodeID" id="episodeID" value="0" />
+                <input type="hidden" name="MovieID" value="@Model.MovieID" />
+
+                <!-- Movie Title Display -->
+                <div class="mb-3">
+                    <label class="form-label">Movie Title</label>
+                    <input type="text" class="form-control" value="@Model.MovieTitle" readonly />
                 </div>
-                <div class="modal-body">
-                    <input type="hidden" name="EpisodeID" id="episodeID" value="0" />
-                    <input type="hidden" name="MovieID" value="@Model.MovieID" />
 
-                    <!-- Movie Title (Read-Only) -->
-                    <div class="mb-3">
-                        <label class="form-label">Movie Title</label>
-                        <input type="text" class="form-control" value="@Model.MovieTitle" readonly />
-                    </div>
 
-                    <!-- Episode Title -->
-                    <div class="mb-3">
-                        <label for="episodeTitle" class="form-label">Episode Title</label>
-                        <input type="text" class="form-control" name="Title" id="episodeTitle" required />
-                    </div>
-
-                    <!-- Episode Number -->
-                    <div class="mb-3">
-                        <label for="episodeNumber" class="form-label">Episode Number</label>
-                        <input type="number" class="form-control" name="EpisodeNumber" id="episodeNumber" required min="1" />
-                    </div>
-
-                    <!-- Video URL -->
-                    <div class="mb-3">
-                        <label for="videoURL" class="form-label">Video URL</label>
-                        <input type="url" class="form-control" name="VideoURL" id="videoURL" required />
-                    </div>
-
-                    <!-- Duration -->
-                    <div class="mb-3">
-                        <label for="duration" class="form-label">Duration (minutes)</label>
-                        <input type="number" class="form-control" name="Duration" id="duration" min="1" />
-                    </div>
+                <!-- Episode Title -->
+                <div class="mb-3">
+                    <label for="episodeTitle" class="form-label">Episode Title</label>
+                    <input type="text" class="form-control" name="Title" id="episodeTitle" required />
                 </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Save</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+
+                <!-- Episode Number -->
+                <div class="mb-3">
+                    <label for="episodeNumber" class="form-label">Episode Number</label>
+                    <input type="number" class="form-control" name="EpisodeNumber" id="episodeNumber" required min="1" />
                 </div>
+
+                <!-- Video URL -->
+                <div class="mb-3">
+                    <label for="videoURL" class="form-label">Video URL</label>
+                    <input type="url" class="form-control" name="VideoURL" id="videoURL" required />
+                </div>
+
+                <!-- Duration -->
+                <div class="mb-3">
+                    <label for="duration" class="form-label">Duration (minutes)</label>
+                    <input type="number" class="form-control" name="Duration" id="duration" min="1" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
+
         </div>
     </div>
 </div>
 
-@* 
-@section Scripts {
-    <script>
-        var addEditModal = document.getElementById('addEditEpisodeModal');
-        addEditModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
 
-            if (button) {
-                var episodeID = button.getAttribute('data-id') || '';
-                var title = button.getAttribute('data-title') || '';
-                var url = button.getAttribute('data-url') || '';
-                var duration = button.getAttribute('data-duration') || '';
-                var epNumber = button.getAttribute('data-epnumber') || '';
 
-                document.getElementById('episodeID').value = episodeID;
-                document.getElementById('episodeTitle').value = title;
-                document.getElementById('videoURL').value = url;
-                document.getElementById('duration').value = duration;
-                document.getElementById('episodeNumber').value = epNumber;
-            } else {
-                // Reset modal fields for Add Episode
-                document.getElementById('episodeID').value = '';
-                document.getElementById('episodeTitle').value = '';
-                document.getElementById('videoURL').value = '';
-                document.getElementById('duration').value = '';
-                document.getElementById('episodeNumber').value = '';
-            }
-        });
-    </script>
-}
- *@
+<script>
+    var addEditModal = document.getElementById('addEditEpisodeModal');
+    addEditModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+
+        if (button) {
+            // Populate modal for editing
+            var episodeID = button.getAttribute('data-id') || '0';
+            var title = button.getAttribute('data-title') || '';
+            var url = button.getAttribute('data-url') || '';
+            var duration = button.getAttribute('data-duration') || '';
+            var epNumber = button.getAttribute('data-epnumber') || '';
+
+            document.getElementById('episodeID').value = episodeID;
+            document.getElementById('episodeTitle').value = title;
+            document.getElementById('videoURL').value = url;
+            document.getElementById('duration').value = duration;
+            document.getElementById('episodeNumber').value = epNumber;
+        } else {
+            // Reset modal for adding
+            document.getElementById('episodeID').value = '0';
+            document.getElementById('episodeTitle').value = '';
+            document.getElementById('videoURL').value = '';
+            document.getElementById('duration').value = '';
+            document.getElementById('episodeNumber').value = '';
+        }
+    });
+
+</script>
+
+<div aria-live="polite" aria-atomic="true" class="position-relative">
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        @if (TempData["Error"] != null)
+        {
+            <div class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true" id="errorToast">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        @TempData["Error"]
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        }
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" id="successToast">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        @TempData["Success"]
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    // Automatically show and hide toast notifications
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const errorToast = document.getElementById('errorToast');
+        const successToast = document.getElementById('successToast');
+
+        if (errorToast) {
+            const toast = new bootstrap.Toast(errorToast, { delay: 5000 });
+            toast.show();
+        }
+
+        if (successToast) {
+            const toast = new bootstrap.Toast(successToast, { delay: 5000 });
+            toast.show();
+        }
+    });
+</script>
+

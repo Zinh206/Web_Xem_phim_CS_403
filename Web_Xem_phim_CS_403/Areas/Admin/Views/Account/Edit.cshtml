@@ -1,0 +1,31 @@
+﻿@model Web_Xem_phim_CS_403.Models.Account
+
+<div class="container my-4">
+    <h2 class="text-center mb-4">Edit Account</h2>
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <input asp-for="Password" class="form-control" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="RoleId" class="form-label">Role</label>
+            <select asp-for="RoleId" class="form-control" asp-items="@(new SelectList(ViewBag.Roles, "Id", "RoleName", Model.RoleId))">
+                <option value="">Select a role</option>
+            </select>
+            <span asp-validation-for="RoleId" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>

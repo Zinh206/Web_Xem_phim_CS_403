@@ -57,37 +57,44 @@ namespace Web_Xem_phim_CS_403.Areas.Admin.Controllers
             return View(episodeListVM);
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult AddOrEditEpisode(EpisodeVM episodeVM)
         {
-            // Kiểm tra dữ liệu đầu vào
+            // Loại bỏ MovieTitle khỏi kiểm tra ModelState
+            ModelState.Remove(nameof(EpisodeVM.MovieTitle));
+
             if (!ModelState.IsValid)
             {
                 TempData["Error"] = "Invalid data.";
                 return RedirectToAction("Manage", new { movieId = episodeVM.MovieID });
             }
 
-            // Lấy thông tin Movie từ MovieID
-            var movie = _context.Movies.Include(m => m.Episodes).FirstOrDefault(m => m.MovieID == episodeVM.MovieID);
+            // Lấy thông tin phim để kiểm tra
+            var movie = _context.Movies.Include(m => m.Episodes)
+                                       .FirstOrDefault(m => m.MovieID == episodeVM.MovieID);
+
             if (movie == null)
             {
                 TempData["Error"] = "Movie not found.";
                 return RedirectToAction("Manage", new { movieId = episodeVM.MovieID });
             }
 
-            // Kiểm tra nếu số tập bị trùng
-            var duplicateEpisode = movie.Episodes.FirstOrDefault(e => e.EpisodeNumber == episodeVM.EpisodeNumber && e.EpisodeID != episodeVM.EpisodeID);
+            // Kiểm tra số tập trùng
+            var duplicateEpisode = movie.Episodes.FirstOrDefault(e =>
+                e.EpisodeNumber == episodeVM.EpisodeNumber &&
+                e.EpisodeID != episodeVM.EpisodeID);
+
             if (duplicateEpisode != null)
             {
                 TempData["Error"] = $"Episode number {episodeVM.EpisodeNumber} already exists.";
                 return RedirectToAction("Manage", new { movieId = episodeVM.MovieID });
             }
 
+            // Thêm mới hoặc chỉnh sửa
             if (episodeVM.EpisodeID == 0)
             {
-                // Thêm mới tập phim
+                // Thêm mới
                 var newEpisode = new Episode
                 {
                     Title = episodeVM.Title,
@@ -101,7 +108,7 @@ namespace Web_Xem_phim_CS_403.Areas.Admin.Controllers
             }
             else
             {
-                // Sửa tập phim hiện có
+                // Sửa tập hiện có
                 var existingEpisode = movie.Episodes.FirstOrDefault(e => e.EpisodeID == episodeVM.EpisodeID);
                 if (existingEpisode != null)
                 {

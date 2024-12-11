@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Web_Xem_phim_CS_403.Models
 {
-    public class User
+    public class Account
     {
         [Key]
         public int Id { get; set; }
@@ -18,5 +19,11 @@ namespace Web_Xem_phim_CS_403.Models
 
         [Required]
         public string Name { get; set; }
+
+        [Required(ErrorMessage = "Role is required.")]
+        public int RoleId { get; set; }
+
+        [ForeignKey("RoleId")]
+        public Role Role { get; set; }
     }
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/Admin/style.css" asp-append-version="true" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Web_Xem_phim_CS_403.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -21,8 +22,10 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="User" asp-controller="Home" asp-action=""> <i class="bi bi-search"></i> Tìm kiếm</a>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link text-light d-flex align-items-center" asp-area="User" asp-controller="Home" asp-action="">
+                                <i class="bi bi-search me-1"></i> Tìm kiếm
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="User" asp-controller="Home" asp-action="">Phim Hot</a>
@@ -68,28 +71,28 @@
                     <ul class="nav flex-column">
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="User" asp-action="Index">
+                            <a class="nav-link d-flex align-items-center" asp-area="Admin" asp-controller="Account" asp-action="Index">
                                 <i class="bi bi-people"></i> User
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" asp-area="Admin" asp-controller="Category" asp-action="Index">
+                            <a class="nav-link active d-flex align-items-center" asp-area="Admin" asp-controller="Category" asp-action="Index">
                                 <i class="bi bi-grid"></i> Category
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="Movie" asp-action="Index">
+                            <a class="nav-link d-flex align-items-center" asp-area="Admin" asp-controller="Movie" asp-action="Index">
                                 <i class="bi bi-film"></i> Movie
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" asp-area="Admin" asp-controller="Episode" asp-action="Index">
+                            <a class="nav-link active d-flex align-items-center" asp-area="Admin" asp-controller="Episode" asp-action="Index">
                                 <i class="bi bi-bookmark-plus"></i> Episode
                             </a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="Subtitle" asp-action="Index">
+                            <a class="nav-link d-flex align-items-center" asp-area="Admin" asp-controller="Subtitle" asp-action="Index">
                                 <i class="bi bi-translate"></i> Subtitle
                             </a>
                         </li>
@@ -111,6 +114,7 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

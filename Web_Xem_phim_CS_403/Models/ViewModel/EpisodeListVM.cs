@@ -3,7 +3,7 @@
     public class EpisodeListVM
     {
         public int MovieID { get; set; }
-        public string MovieTitle { get; set; }
+        public string MovieTitle { get; set; } = string.Empty;
         public int TotalEpisodesAllowed { get; set; }
         public List<EpisodeVM> Episodes { get; set; } = new();
     }

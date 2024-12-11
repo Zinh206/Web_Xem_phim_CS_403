@@ -22,6 +22,37 @@ namespace Web_Xem_phim_CS_403.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Web_Xem_phim_CS_403.Models.Account", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("Accounts");
+                });
+
             modelBuilder.Entity("Web_Xem_phim_CS_403.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -61,7 +92,8 @@ namespace Web_Xem_phim_CS_403.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("VideoURL")
                         .IsRequired()
@@ -136,6 +168,35 @@ namespace Web_Xem_phim_CS_403.Migrations
                     b.ToTable("MovieCategory");
                 });
 
+            modelBuilder.Entity("Web_Xem_phim_CS_403.Models.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            RoleName = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            RoleName = "User"
+                        });
+                });
+
             modelBuilder.Entity("Web_Xem_phim_CS_403.Models.Subtitle", b =>
                 {
                     b.Property<int>("Id")
@@ -165,30 +226,15 @@ namespace Web_Xem_phim_CS_403.Migrations
                     b.ToTable("Subtitles");
                 });
 
-            modelBuilder.Entity("Web_Xem_phim_CS_403.Models.User", b =>
+            modelBuilder.Entity("Web_Xem_phim_CS_403.Models.Account", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("Web_Xem_phim_CS_403.Models.Role", "Role")
+                        .WithMany("Accounts")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("Web_Xem_phim_CS_403.Models.Episode", b =>
@@ -242,6 +288,11 @@ namespace Web_Xem_phim_CS_403.Migrations
                     b.Navigation("Episodes");
 
                     b.Navigation("MovieCategories");
+                });
+
+            modelBuilder.Entity("Web_Xem_phim_CS_403.Models.Role", b =>
+                {
+                    b.Navigation("Accounts");
                 });
 #pragma warning restore 612, 618
         }

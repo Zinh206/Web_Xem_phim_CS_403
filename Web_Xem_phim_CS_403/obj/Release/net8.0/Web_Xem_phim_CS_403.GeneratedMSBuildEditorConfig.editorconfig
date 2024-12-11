@@ -26,8 +26,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Episode/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Episode/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxNYW5hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Movie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Movie/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Movie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/_ViewImports.cshtml]

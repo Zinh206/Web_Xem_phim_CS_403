@@ -282,3 +282,4 @@ D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.pdb
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.genruntimeconfig.cache
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\ref\Web_Xem_phim_CS_403.dll
+D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.sourcelink.json

@@ -11,7 +11,8 @@ namespace Web_Xem_phim_CS_403.Data
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Episode> Episodes { get; set; }
         public DbSet<Subtitle> Subtitles { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -42,6 +43,11 @@ namespace Web_Xem_phim_CS_403.Data
                 .OnDelete(DeleteBehavior.Cascade);
 
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Role>().HasData(
+               new Role { Id = 1, RoleName = "Admin" },
+               new Role { Id = 2, RoleName = "User" }
+           );
         }
        
     

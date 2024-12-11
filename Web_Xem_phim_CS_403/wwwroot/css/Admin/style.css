@@ -1,4 +1,10 @@
 ﻿body {
+    /*background-image: url('../../image/capture.png');*/
+    /*background-image: url('../../image/bgr2.jpg');
+    background-size: cover;*/ /* Ảnh phủ toàn bộ màn hình */
+    /*background-position: center;*/ /* Ảnh căn giữa */
+    /*background-repeat: no-repeat;*/ /* Không lặp lại ảnh */
+    /*color: white*/
    
 }
 
@@ -26,14 +32,14 @@ footer {
     font-size: 1rem;
     font-weight: 500;
     color: #6c757d;
-    padding: 10px 15px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
 }
 
     .nav-link:hover {
-        background-color: #bbdefb; /* Xanh dương nhạt */
+       /* background-color: #bbdefb;*/ /* Xanh dương nhạt */
         color: #0a58ca;
         transform: translateX(5px); /* Hiệu ứng dịch sang phải */
         font-weight: bold; /* In đậm chữ */
@@ -55,4 +61,27 @@ footer {
     }
 .nav-item {
     margin-bottom: 10px;
+}
+
+.card {
+   width: 500px; /* Chiều rộng của thẻ */
+        height: 60px; /* Chiều cao của thẻ */
+        padding: 20px; /* Khoảng cách bên trong thẻ */
+        margin: 20px auto; /* Căn giữa thẻ */
+        border-radius: 10px; /* Bo tròn các góc */
+        background-color: #ffffff; /* Màu nền */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 
+                    0px 1px 3px rgba(0, 0, 0, 0.08); /* Hiệu ứng đổ bóng */
+        display: flex; /* Kích hoạt flexbox */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        text-align: center; /* Căn giữa văn bản */
+}
+
+.card:hover {
+        transform: scale(1.05); /* Phóng to nhẹ khi hover */
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.12); /* Đổ bóng đậm hơn khi hover */
+    }
+.text-center {
+    text-align: center;
 }

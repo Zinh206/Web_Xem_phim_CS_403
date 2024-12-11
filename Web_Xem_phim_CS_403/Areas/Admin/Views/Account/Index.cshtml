@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Web_Xem_phim_CS_403.Models.Account>
+
+<div class="container my-4">
+    <h2 class="text-center mb-4">Manage Accounts</h2>
+    <div class="d-flex justify-content-end mb-2">
+        <a asp-action="Create" class="btn btn-success mb-3">Add New Account</a>
+    </div>
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var account in Model)
+            {
+                <tr>
+                    <td>@account.Id</td>
+                    <td>@account.Email</td>
+                    <td>@account.Name</td>
+                    <td>@account.Role?.RoleName</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@account.Id" class="btn btn-warning btn-sm">Edit</a>
+                        <form asp-action="Delete" asp-route-id="@account.Id" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

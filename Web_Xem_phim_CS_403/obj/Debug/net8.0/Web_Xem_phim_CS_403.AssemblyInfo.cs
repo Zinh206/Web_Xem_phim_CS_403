@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Web_Xem_phim_CS_403")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd1d538ba09291e79ae99cbd57f56f1d806cb1a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Web_Xem_phim_CS_403")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Web_Xem_phim_CS_403")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
