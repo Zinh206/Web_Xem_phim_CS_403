@@ -266,6 +266,7 @@ D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.MvcApplicationPartsAssemblyInfo.cache
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.RazorAssemblyInfo.cache
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.RazorAssemblyInfo.cs
+D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.sourcelink.json
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\staticwebassets.build.json
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\staticwebassets.development.json
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\staticwebassets\msbuild.Web_Xem_phim_CS_403.Microsoft.AspNetCore.StaticWebAssets.props
@@ -282,4 +283,3 @@ D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.pdb
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.genruntimeconfig.cache
 D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\ref\Web_Xem_phim_CS_403.dll
-D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403\obj\Release\net8.0\Web_Xem_phim_CS_403.sourcelink.json

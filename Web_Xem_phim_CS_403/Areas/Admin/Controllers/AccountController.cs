@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web_Xem_phim_CS_403.Data;
 using Web_Xem_phim_CS_403.Models;
+using Web_Xem_phim_CS_403.Models.ViewModel;
+
 
 namespace Web_Xem_phim_CS_403.Areas.Admin.Controllers
 {
@@ -24,19 +27,38 @@ namespace Web_Xem_phim_CS_403.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.Roles = _context.Roles.ToList(); // Lấy danh sách Role từ DB
-            return View();
+            var viewModel = new AccountCreateVM
+            {
+                Roles = _context.Roles.Select(r => new SelectListItem
+                {
+                    Value = r.Id.ToString(),
+                    Text = r.RoleName
+                }).ToList()
+            };
+            return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Account account)
+        public IActionResult Create(AccountCreateVM model)
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Roles = _context.Roles.ToList(); // Gửi lại danh sách Role nếu ModelState không hợp lệ
-                return View(account);
+                model.Roles = _context.Roles.Select(r => new SelectListItem
+                {
+                    Value = r.Id.ToString(),
+                    Text = r.RoleName
+                }).ToList();
+                return View(model);
             }
+
+            var account = new Account
+            {
+                Email = model.Email,
+                Password = model.Password,
+                Name = model.Name,
+                RoleId = model.RoleId
+            };
 
             _context.Accounts.Add(account);
             _context.SaveChanges();

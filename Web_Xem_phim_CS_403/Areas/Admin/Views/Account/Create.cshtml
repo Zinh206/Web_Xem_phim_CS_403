@@ -1,26 +1,34 @@
-﻿@model Web_Xem_phim_CS_403.Models.Account
+﻿@model Web_Xem_phim_CS_403.Models.ViewModel.AccountCreateVM
+
 
 <div class="container my-4">
     <h2 class="text-center mb-4">Add New Account</h2>
     <form asp-action="Create" method="post">
+        <!-- Email -->
         <div class="mb-3">
-            <label for="Email" class="form-label">Email</label>
+            <label asp-for="Email" class="form-label"></label>
             <input asp-for="Email" class="form-control" />
             <span asp-validation-for="Email" class="text-danger"></span>
         </div>
+
+        <!-- Password -->
         <div class="mb-3">
-            <label for="Password" class="form-label">Password</label>
+            <label asp-for="Password" class="form-label"></label>
             <input asp-for="Password" class="form-control" type="password" />
             <span asp-validation-for="Password" class="text-danger"></span>
         </div>
+
+        <!-- Name -->
         <div class="mb-3">
-            <label for="Name" class="form-label">Name</label>
+            <label asp-for="Name" class="form-label"></label>
             <input asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
+
+        <!-- Role -->
         <div class="mb-3">
-            <label for="RoleId" class="form-label">Role</label>
-            <select asp-for="RoleId" class="form-control" asp-items="@(new SelectList(ViewBag.Roles, "Id", "RoleName"))">
+            <label asp-for="RoleId" class="form-label"></label>
+            <select asp-for="RoleId" class="form-control" asp-items="Model.Roles">
                 <option value="">Select a role</option>
             </select>
             <span asp-validation-for="RoleId" class="text-danger"></span>
@@ -30,3 +38,18 @@
         <button type="submit" class="btn btn-primary">Save</button>
     </form>
 </div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+@if (TempData["Success"] != null)
+{
+    <div id="notification" class="alert alert-success position-fixed top-0 end-0 m-3">
+        @TempData["Success"]
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div id="notification" class="alert alert-danger position-fixed top-0 end-0 m-3">
+        @TempData["Error"]
+    </div>
+}

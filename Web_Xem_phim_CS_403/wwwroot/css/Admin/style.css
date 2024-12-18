@@ -85,3 +85,21 @@ footer {
 .text-center {
     text-align: center;
 }
+#notification {
+    z-index: 1050;
+    animation: fadeOut 5s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\areas\\admin\\views\\account\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\areas\\admin\\views\\account\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\areas\\admin\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\areas\\admin\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|d:\\file vinh\\cs_403_s\\web_xem_phim_cs_403\\web_xem_phim_cs_403\\areas\\admin\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A35D678F-DEB3-45B7-98C5-0F5CB99A1F30}|Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403.csproj|solutionrelative:web_xem_phim_cs_403\\areas\\admin\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,84 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Models\\Role.cs",
-              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Models\\Role.cs",
-              "RelativeToolTip": "Web_Xem_phim_CS_403\\Models\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T02:32:11.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Account.cs",
-              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Models\\Account.cs",
-              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Models\\Account.cs",
-              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Models\\Account.cs",
-              "RelativeToolTip": "Web_Xem_phim_CS_403\\Models\\Account.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T02:25:33.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Index.cshtml",
-              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Index.cshtml",
-              "RelativeToolTip": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Index.cshtml",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAswCUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T02:23:13.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
-              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
-              "RelativeToolTip": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T02:23:08.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Web_Xem_phim_CS_403\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwCQAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T02:22:51.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Create.cshtml",
-              "RelativeDocumentMoniker": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Create.cshtml",
-              "ToolTip": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Create.cshtml",
-              "RelativeToolTip": "Web_Xem_phim_CS_403\\Areas\\Admin\\Views\\Account\\Create.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T02:22:47.312Z",
-              "EditorCaption": ""
             }
           ]
         }

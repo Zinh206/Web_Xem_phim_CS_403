@@ -42,18 +42,27 @@
                     </ul>
                 </div>
 
-                <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUserMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://via.placeholder.com/40" alt="Avatar" class="rounded-circle" width="40" height="40">
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="dropdownUserMenu">
-                        <li><a class="dropdown-item" asp-area="User" asp-controller="" >Tài khoản</a></li>
-                        <li><a class="dropdown-item" asp-area="User" asp-action="" asp-controller="" >Donate</a></li>
-                        <li><a class="dropdown-item" asp-area="Admin" asp-action="Index" asp-controller="Home" >Quản lý</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" asp-area="User" asp-action="" asp-controller="" >Đăng xuất</a></li>
-                    </ul>
-                </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            @User.Identity.Name[0].ToString().ToUpper()
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-area="User" asp-controller="Home" asp-action="Index">Home</a></li>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li><a class="dropdown-item" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Manage</a></li>
+                            }
+                            <li><a class="dropdown-item" asp-area="User" asp-controller="Account" asp-action="Logout">Logout</a></li>
+                        </ul>
+                    </div>
+                }
+                else
+                {
+                    <a asp-area="User" asp-controller="Account" asp-action="Login" class="btn btn-primary">Login</a>
+                }
+
 
             </div>
         </nav>

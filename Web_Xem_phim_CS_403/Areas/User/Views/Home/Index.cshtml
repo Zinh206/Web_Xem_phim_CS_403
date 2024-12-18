@@ -1,5 +1,94 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<Web_Xem_phim_CS_403.Models.Movie>
 
+<div class="container my-4">
+    <!-- Dropdown Lọc -->
+    <div class="d-flex justify-content-between">
+        <select class="form-select w-20" onchange="window.location.href='?categoryId=' + this.value">
+            <option value="">Thể loại</option>
+            @foreach (var category in (List<Web_Xem_phim_CS_403.Models.Category>)ViewBag.Categories)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        </select>
+        <select class="form-select w-20" onchange="window.location.href='?year=' + this.value">
+            <option value="">Năm</option>
+            @foreach (var year in (List<int>)ViewBag.Years)
+            {
+                <option value="@year">@year</option>
+            }
+        </select>
+        <select class="form-select w-20" onchange="window.location.href='?duration=' + this.value">
+            <option value="">Thời lượng</option>
+            <option value="1">Dưới 60 phút</option>
+            <option value="2">60-120 phút</option>
+            <option value="3">Trên 120 phút</option>
+        </select>
+    </div>
 
+    <!-- Phim đề cử -->
+    <h3 class="text-warning mt-4">PHIM ĐỀ CỬ</h3>
+    <div class="row">
+        @foreach (var movie in (List<Web_Xem_phim_CS_403.Models.Movie>)ViewBag.TopRatedMovies)
+        {
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="@movie.PosterURL" class="card-img-top" alt="@movie.Title" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-light">@movie.Title</h5>
+                        <p class="card-text text-muted">@movie.Title</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Danh sách phim -->
+    <h3 class="text-warning mt-4">DANH SÁCH PHIM</h3>
+    <div class="row">
+        @foreach (var movie in (List<Web_Xem_phim_CS_403.Models.Movie>)ViewBag.Movies)
+        {
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="@movie.PosterURL" class="card-img-top" alt="@movie.Title" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-light">@movie.Title</h5>
+                        <p class="card-text text-muted">@movie.Title</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@* <script>
+    document.querySelectorAll('.form-select').forEach(select => {
+        select.addEventListener('change', () => {
+            const movieType = document.getElementById('movieType').value;
+            const category = document.getElementById('category').value;
+            const country = document.getElementById('country').value;
+            const year = document.getElementById('year').value;
+            const duration = document.getElementById('duration').value;
+            const sort = document.getElementById('sort').value;
+
+            // Gửi request để lọc phim
+            fetch(`/User/Home/FilterMovies?movieType=${movieType}&category=${category}&country=${country}&year=${year}&duration=${duration}&sort=${sort}`)
+                .then(response => response.json())
+                .then(data => {
+                    const movieContainer = document.getElementById('movieContainer');
+                    movieContainer.innerHTML = '';
+                    data.forEach(movie => {
+                        movieContainer.innerHTML += `
+                                <div class="col-md-3">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img src="${movie.posterUrl}" class="card-img-top" alt="${movie.title}" />
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-light">${movie.title}</h5>
+                                            <p class="card-text text-muted">${movie.originalTitle}</p>
+                                        </div>
+                                    </div>
+                                </div>`;
+                    });
+                });
+        });
+    });
+</script> *@

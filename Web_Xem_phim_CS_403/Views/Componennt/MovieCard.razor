@@ -1,0 +1,11 @@
+﻿@code {
+    [Parameter]
+    public Web_Xem_phim_CS_403.Models.ViewModel.MovieVM Movie { get; set; }
+}
+
+<div class="movie-card">
+    <img src="@Movie.PosterURL" alt="@Movie.Title" class="movie-poster" />
+    <div class="movie-info">
+        <h3>@Movie.Title</h3>
+    </div>
+</div>

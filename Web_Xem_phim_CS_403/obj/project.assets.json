@@ -7763,7 +7763,6 @@
   },
   "packageFolders": {
     "C:\\Users\\phucc\\.nuget\\packages\\": {},
-    "D:\\Download\\DevExpress\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -7776,12 +7775,10 @@
       "outputPath": "D:\\File Vinh\\CS_403_S\\Web_Xem_phim_CS_403\\Web_Xem_phim_CS_403\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Download\\DevExpress\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\phucc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7790,7 +7787,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Download\\DevExpress\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

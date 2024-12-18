@@ -1,0 +1,42 @@
+﻿@model Web_Xem_phim_CS_403.Models.Account
+
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="login-container" style="background-image: url('/path-to-background-image.jpg'); height: 100vh; background-size: cover; background-position: center;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="card p-4 shadow-lg" style="width: 400px; background-color: rgba(255, 255, 255, 0.9);">
+            <h4 class="text-center" style="color: black;">Login Here</h4>
+            <form asp-action="Login" method="post">
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-danger">@TempData["Error"]</div>
+                }
+
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="color: black;">Email</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label" style="color: black;">Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" style="color: black;" id="rememberMe">
+                    <label class="form-check-label" style="color: black;" for="rememberMe">Remember me</label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success">Login</button>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="text-center mt-3">
+                    <p>To Register New Account → <a asp-action="Register" class="text-primary">Click Here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

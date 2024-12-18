@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\File Vinh\CS_403_S\Web_Xem_phim_CS_403\Web_Xem_phim_CS_403
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Views/Componennt/MovieCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW5udFxNb3ZpZUNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/Account/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,6 +84,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/User/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xBY2NvdW50XExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/User/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xBY2NvdW50XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/File Vinh/CS_403_S/Web_Xem_phim_CS_403/Web_Xem_phim_CS_403/Areas/User/Views/Home/Index.cshtml]
